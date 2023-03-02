@@ -1,6 +1,6 @@
 <p align="center"><a href="https://www.sqlite.org" target="_blank"><img src="https://www.sqlite.org/images/sqlite370_banner.gif" width="200"></a></p><p></p>
 
-# Python_QT
+# Python_dataBase
 
 ## Assignment 22
 ## **ToDoList**
