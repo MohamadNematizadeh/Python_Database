@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>632</width>
+    <height>659</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Sudo</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QGridLayout" name="grid_layout"/>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QPushButton" name="btn_newgame">
+        <property name="font">
+         <font>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">alternate-background-color: rgb(102, 102, 102);
+color: rgb(77, 0, 232);</string>
+        </property>
+        <property name="text">
+         <string>New Game</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btn_check">
+        <property name="font">
+         <font>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">alternate-background-color: rgb(102, 102, 102);
+color: rgb(85, 0, 255);</string>
+        </property>
+        <property name="text">
+         <string>Check</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btn_clear">
+        <property name="font">
+         <font>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">alternate-background-color: rgb(102, 102, 102);
+color: rgb(85, 0, 255);</string>
+        </property>
+        <property name="text">
+         <string>Clear</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btn_theme">
+        <property name="font">
+         <font>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">alternate-background-color: rgb(102, 102, 102);
+color: rgb(85, 0, 255);</string>
+        </property>
+        <property name="text">
+         <string>Dark / Light mode</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>632</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menugame">
+    <property name="title">
+     <string>game</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="menu_new"/>
+    <addaction name="menu_theme"/>
+   </widget>
+   <addaction name="menugame"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="menu_new">
+   <property name="text">
+    <string>New</string>
+   </property>
+  </action>
+  <action name="menu_file">
+   <property name="text">
+    <string>Open File..</string>
+   </property>
+  </action>
+  <action name="menu_help">
+   <property name="text">
+    <string>help</string>
+   </property>
+  </action>
+  <action name="menu_exit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="menu_about">
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+  <action name="menu_check">
+   <property name="text">
+    <string>check</string>
+   </property>
+  </action>
+  <action name="menu_help_2">
+   <property name="text">
+    <string>Help</string>
+   </property>
+  </action>
+  <action name="menu_about_2">
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+  <action name="menu_exit_2">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="menu_theme">
+   <property name="text">
+    <string>theme</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
