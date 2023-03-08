@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>632</width>
-    <height>659</height>
+    <width>333</width>
+    <height>456</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,75 +16,78 @@
   <widget class="QWidget" name="centralwidget">
    <layout class="QVBoxLayout" name="verticalLayout">
     <item>
-     <layout class="QGridLayout" name="grid_layout"/>
+     <widget class="QLabel" name="label">
+      <property name="font">
+       <font>
+        <pointsize>22</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Sudoku game</string>
+      </property>
+      <property name="scaledContents">
+       <bool>false</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+     </widget>
     </item>
     <item>
-     <layout class="QHBoxLayout" name="horizontalLayout">
+     <layout class="QVBoxLayout" name="verticalLayout_2">
       <item>
-       <widget class="QPushButton" name="btn_newgame">
-        <property name="font">
-         <font>
-          <bold>true</bold>
-         </font>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">alternate-background-color: rgb(102, 102, 102);
-color: rgb(77, 0, 232);</string>
-        </property>
-        <property name="text">
-         <string>New Game</string>
-        </property>
-       </widget>
+       <layout class="QGridLayout" name="grid_layout"/>
       </item>
       <item>
-       <widget class="QPushButton" name="btn_check">
-        <property name="font">
-         <font>
-          <bold>true</bold>
-         </font>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">alternate-background-color: rgb(102, 102, 102);
-color: rgb(85, 0, 255);</string>
-        </property>
-        <property name="text">
-         <string>Check</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QPushButton" name="btn_clear">
-        <property name="font">
-         <font>
-          <bold>true</bold>
-         </font>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">alternate-background-color: rgb(102, 102, 102);
-color: rgb(85, 0, 255);</string>
-        </property>
-        <property name="text">
-         <string>Clear</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QPushButton" name="btn_theme">
-        <property name="font">
-         <font>
-          <bold>true</bold>
-         </font>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">alternate-background-color: rgb(102, 102, 102);
-color: rgb(85, 0, 255);</string>
-        </property>
-        <property name="text">
-         <string>Dark / Light mode</string>
-        </property>
-       </widget>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QPushButton" name="New_Button">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(196, 255, 174);</string>
+          </property>
+          <property name="text">
+           <string>New Game</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="check_button">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(255, 184, 98);</string>
+          </property>
+          <property name="text">
+           <string>Check</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="restart_button">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(196, 255, 174);</string>
+          </property>
+          <property name="text">
+           <string>Restart</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
       </item>
      </layout>
+    </item>
+    <item>
+     <widget class="QPushButton" name="mode_button">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(150, 0, 209);
+background-color: rgb(58, 135, 126);</string>
+      </property>
+      <property name="text">
+       <string>Dark mode</string>
+      </property>
+     </widget>
     </item>
    </layout>
   </widget>
@@ -93,7 +96,7 @@ color: rgb(85, 0, 255);</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>632</width>
+     <width>333</width>
      <height>25</height>
     </rect>
    </property>
@@ -104,8 +107,18 @@ color: rgb(85, 0, 255);</string>
     <addaction name="separator"/>
     <addaction name="menu_new"/>
     <addaction name="menu_theme"/>
+    <addaction name="menu_exit_3"/>
+    <addaction name="open_file"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="menu_about_3"/>
+    <addaction name="menu_help_3"/>
    </widget>
    <addaction name="menugame"/>
+   <addaction name="menuHelp"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
   <action name="menu_new">
@@ -156,6 +169,26 @@ color: rgb(85, 0, 255);</string>
   <action name="menu_theme">
    <property name="text">
     <string>theme</string>
+   </property>
+  </action>
+  <action name="menu_exit_3">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="menu_about_3">
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+  <action name="menu_help_3">
+   <property name="text">
+    <string>Help gam</string>
+   </property>
+  </action>
+  <action name="open_file">
+   <property name="text">
+    <string>Open File.....</string>
    </property>
   </action>
  </widget>
