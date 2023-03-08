@@ -16,15 +16,15 @@ from PySide6.QtGui import (QAction, QBrush, QColor, QConicalGradient,
     QIcon, QImage, QKeySequence, QLinearGradient,
     QPainter, QPalette, QPixmap, QRadialGradient,
     QTransform)
-from PySide6.QtWidgets import (QApplication, QGridLayout, QHBoxLayout, QMainWindow,
-    QMenu, QMenuBar, QPushButton, QSizePolicy,
-    QStatusBar, QVBoxLayout, QWidget)
+from PySide6.QtWidgets import (QApplication, QGridLayout, QHBoxLayout, QLabel,
+    QMainWindow, QMenu, QMenuBar, QPushButton,
+    QSizePolicy, QStatusBar, QVBoxLayout, QWidget)
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(632, 659)
+        MainWindow.resize(333, 456)
         self.menu_new = QAction(MainWindow)
         self.menu_new.setObjectName(u"menu_new")
         self.menu_file = QAction(MainWindow)
@@ -45,69 +45,92 @@ class Ui_MainWindow(object):
         self.menu_exit_2.setObjectName(u"menu_exit_2")
         self.menu_theme = QAction(MainWindow)
         self.menu_theme.setObjectName(u"menu_theme")
+        self.menu_exit_3 = QAction(MainWindow)
+        self.menu_exit_3.setObjectName(u"menu_exit_3")
+        self.menu_about_3 = QAction(MainWindow)
+        self.menu_about_3.setObjectName(u"menu_about_3")
+        self.menu_help_3 = QAction(MainWindow)
+        self.menu_help_3.setObjectName(u"menu_help_3")
+        self.open_file = QAction(MainWindow)
+        self.open_file.setObjectName(u"open_file")
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
         self.verticalLayout = QVBoxLayout(self.centralwidget)
         self.verticalLayout.setObjectName(u"verticalLayout")
+        self.label = QLabel(self.centralwidget)
+        self.label.setObjectName(u"label")
+        font = QFont()
+        font.setPointSize(22)
+        font.setBold(True)
+        self.label.setFont(font)
+        self.label.setScaledContents(False)
+        self.label.setAlignment(Qt.AlignCenter)
+        self.label.setWordWrap(False)
+
+        self.verticalLayout.addWidget(self.label)
+
+        self.verticalLayout_2 = QVBoxLayout()
+        self.verticalLayout_2.setObjectName(u"verticalLayout_2")
         self.grid_layout = QGridLayout()
         self.grid_layout.setObjectName(u"grid_layout")
 
-        self.verticalLayout.addLayout(self.grid_layout)
+        self.verticalLayout_2.addLayout(self.grid_layout)
 
         self.horizontalLayout = QHBoxLayout()
         self.horizontalLayout.setObjectName(u"horizontalLayout")
-        self.btn_newgame = QPushButton(self.centralwidget)
-        self.btn_newgame.setObjectName(u"btn_newgame")
-        font = QFont()
-        font.setBold(True)
-        self.btn_newgame.setFont(font)
-        self.btn_newgame.setStyleSheet(u"alternate-background-color: rgb(102, 102, 102);\n"
-"color: rgb(77, 0, 232);")
+        self.New_Button = QPushButton(self.centralwidget)
+        self.New_Button.setObjectName(u"New_Button")
+        self.New_Button.setStyleSheet(u"background-color: rgb(196, 255, 174);")
 
-        self.horizontalLayout.addWidget(self.btn_newgame)
+        self.horizontalLayout.addWidget(self.New_Button)
 
-        self.btn_check = QPushButton(self.centralwidget)
-        self.btn_check.setObjectName(u"btn_check")
-        self.btn_check.setFont(font)
-        self.btn_check.setStyleSheet(u"alternate-background-color: rgb(102, 102, 102);\n"
-"color: rgb(85, 0, 255);")
+        self.check_button = QPushButton(self.centralwidget)
+        self.check_button.setObjectName(u"check_button")
+        self.check_button.setStyleSheet(u"background-color: rgb(255, 184, 98);")
 
-        self.horizontalLayout.addWidget(self.btn_check)
+        self.horizontalLayout.addWidget(self.check_button)
 
-        self.btn_clear = QPushButton(self.centralwidget)
-        self.btn_clear.setObjectName(u"btn_clear")
-        self.btn_clear.setFont(font)
-        self.btn_clear.setStyleSheet(u"alternate-background-color: rgb(102, 102, 102);\n"
-"color: rgb(85, 0, 255);")
+        self.restart_button = QPushButton(self.centralwidget)
+        self.restart_button.setObjectName(u"restart_button")
+        self.restart_button.setStyleSheet(u"background-color: rgb(196, 255, 174);")
 
-        self.horizontalLayout.addWidget(self.btn_clear)
-
-        self.btn_theme = QPushButton(self.centralwidget)
-        self.btn_theme.setObjectName(u"btn_theme")
-        self.btn_theme.setFont(font)
-        self.btn_theme.setStyleSheet(u"alternate-background-color: rgb(102, 102, 102);\n"
-"color: rgb(85, 0, 255);")
-
-        self.horizontalLayout.addWidget(self.btn_theme)
+        self.horizontalLayout.addWidget(self.restart_button)
 
 
-        self.verticalLayout.addLayout(self.horizontalLayout)
+        self.verticalLayout_2.addLayout(self.horizontalLayout)
+
+
+        self.verticalLayout.addLayout(self.verticalLayout_2)
+
+        self.mode_button = QPushButton(self.centralwidget)
+        self.mode_button.setObjectName(u"mode_button")
+        self.mode_button.setStyleSheet(u"background-color: rgb(150, 0, 209);\n"
+"background-color: rgb(58, 135, 126);")
+
+        self.verticalLayout.addWidget(self.mode_button)
 
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QMenuBar(MainWindow)
         self.menubar.setObjectName(u"menubar")
-        self.menubar.setGeometry(QRect(0, 0, 632, 25))
+        self.menubar.setGeometry(QRect(0, 0, 333, 25))
         self.menugame = QMenu(self.menubar)
         self.menugame.setObjectName(u"menugame")
+        self.menuHelp = QMenu(self.menubar)
+        self.menuHelp.setObjectName(u"menuHelp")
         MainWindow.setMenuBar(self.menubar)
         self.statusbar = QStatusBar(MainWindow)
         self.statusbar.setObjectName(u"statusbar")
         MainWindow.setStatusBar(self.statusbar)
 
         self.menubar.addAction(self.menugame.menuAction())
+        self.menubar.addAction(self.menuHelp.menuAction())
         self.menugame.addSeparator()
         self.menugame.addAction(self.menu_new)
         self.menugame.addAction(self.menu_theme)
+        self.menugame.addAction(self.menu_exit_3)
+        self.menugame.addAction(self.open_file)
+        self.menuHelp.addAction(self.menu_about_3)
+        self.menuHelp.addAction(self.menu_help_3)
 
         self.retranslateUi(MainWindow)
 
@@ -126,10 +149,16 @@ class Ui_MainWindow(object):
         self.menu_about_2.setText(QCoreApplication.translate("MainWindow", u"About", None))
         self.menu_exit_2.setText(QCoreApplication.translate("MainWindow", u"Exit", None))
         self.menu_theme.setText(QCoreApplication.translate("MainWindow", u"theme", None))
-        self.btn_newgame.setText(QCoreApplication.translate("MainWindow", u"New Game", None))
-        self.btn_check.setText(QCoreApplication.translate("MainWindow", u"Check", None))
-        self.btn_clear.setText(QCoreApplication.translate("MainWindow", u"Clear", None))
-        self.btn_theme.setText(QCoreApplication.translate("MainWindow", u"Dark / Light mode", None))
+        self.menu_exit_3.setText(QCoreApplication.translate("MainWindow", u"Exit", None))
+        self.menu_about_3.setText(QCoreApplication.translate("MainWindow", u"About", None))
+        self.menu_help_3.setText(QCoreApplication.translate("MainWindow", u"Help gam", None))
+        self.open_file.setText(QCoreApplication.translate("MainWindow", u"Open File.....", None))
+        self.label.setText(QCoreApplication.translate("MainWindow", u"Sudoku game", None))
+        self.New_Button.setText(QCoreApplication.translate("MainWindow", u"New Game", None))
+        self.check_button.setText(QCoreApplication.translate("MainWindow", u"Check", None))
+        self.restart_button.setText(QCoreApplication.translate("MainWindow", u"Restart", None))
+        self.mode_button.setText(QCoreApplication.translate("MainWindow", u"Dark mode", None))
         self.menugame.setTitle(QCoreApplication.translate("MainWindow", u"game", None))
+        self.menuHelp.setTitle(QCoreApplication.translate("MainWindow", u"Help", None))
     # retranslateUi
 
