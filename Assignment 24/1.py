@@ -4,7 +4,7 @@ import time
 
 start_time = time.time()
 
-for i in range(1,2):
+for i in range(1,6):
     video = mp.VideoFileClip(f"{i}.mp4")
     audio = video.audio
     audio.write_audiofile(f"{i}.mp3")
