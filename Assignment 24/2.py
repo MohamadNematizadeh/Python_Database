@@ -12,7 +12,7 @@ def convert_video_to_audio(video_file, audio_file):
 
 threads = []
 
-for i in range(1,2):
+for i in range(1,6):
     t = Thread(target=convert_video_to_audio, args=(f"{i}.mp4", f"{i}.mp3"))
     threads.append(t)
     
