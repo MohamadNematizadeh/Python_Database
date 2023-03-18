@@ -27,10 +27,6 @@ class Main_window(QMainWindow):
         global time_us
         self.my_time = Stopwi_shred()
         self.Thread_stopw =  Stopwi_shred()
-        self.thread_timer = Thread_timer()
-        self.thread_timer.timer_signal.connect(self.show_timer_number)
-        self.timer_time = Mytime(0,15,30)
-        self.show_timer_number(self.timer_time)
         time_ir = time_ir(self.ui)
         time_de = time_de(self.ui)
         time_us = time_us(self.ui)
@@ -128,4 +124,4 @@ if __name__ =="__main__":
     app = QApplication(sys.argv)
     window = Main_window()
     window.show()
-    sys.exit(app.exec_())
+    sys.exit(app.exec_()) 
