@@ -1,0 +1,1204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>549</width>
+    <height>367</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>851</width>
+      <height>341</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>Clock</string>
+     </attribute>
+     <widget class="QWidget" name="widget_3" native="true">
+      <property name="geometry">
+       <rect>
+        <x>221</x>
+        <y>-177</y>
+        <width>480</width>
+        <height>141</height>
+       </rect>
+      </property>
+      <property name="autoFillBackground">
+       <bool>true</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;ui version=&quot;4.0&quot;&gt;
+ &lt;widget name=&quot;__qt_fake_top_level&quot;&gt;
+  &lt;widget class=&quot;QWidget&quot; name=&quot;widget&quot; native=&quot;true&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;9&lt;/x&gt;
+     &lt;y&gt;192&lt;/y&gt;
+     &lt;width&gt;356&lt;/width&gt;
+     &lt;height&gt;85&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;autoFillBackground&quot;&gt;
+    &lt;bool&gt;true&lt;/bool&gt;
+   &lt;/property&gt;
+   &lt;widget class=&quot;QLabel&quot; name=&quot;lb_washington&quot;&gt;
+    &lt;property name=&quot;geometry&quot;&gt;
+     &lt;rect&gt;
+      &lt;x&gt;190&lt;/x&gt;
+      &lt;y&gt;10&lt;/y&gt;
+      &lt;width&gt;175&lt;/width&gt;
+      &lt;height&gt;62&lt;/height&gt;
+     &lt;/rect&gt;
+    &lt;/property&gt;
+    &lt;property name=&quot;font&quot;&gt;
+     &lt;font&gt;
+      &lt;family&gt;Centaur&lt;/family&gt;
+      &lt;pointsize&gt;16&lt;/pointsize&gt;
+     &lt;/font&gt;
+    &lt;/property&gt;
+    &lt;property name=&quot;text&quot;&gt;
+     &lt;string&gt;0:0:0&lt;/string&gt;
+    &lt;/property&gt;
+   &lt;/widget&gt;
+   &lt;widget class=&quot;QLabel&quot; name=&quot;lb_tehran_5&quot;&gt;
+    &lt;property name=&quot;geometry&quot;&gt;
+     &lt;rect&gt;
+      &lt;x&gt;0&lt;/x&gt;
+      &lt;y&gt;10&lt;/y&gt;
+      &lt;width&gt;175&lt;/width&gt;
+      &lt;height&gt;62&lt;/height&gt;
+     &lt;/rect&gt;
+    &lt;/property&gt;
+    &lt;property name=&quot;font&quot;&gt;
+     &lt;font&gt;
+      &lt;family&gt;Centaur&lt;/family&gt;
+      &lt;pointsize&gt;16&lt;/pointsize&gt;
+     &lt;/font&gt;
+    &lt;/property&gt;
+    &lt;property name=&quot;text&quot;&gt;
+     &lt;string&gt;Washington&lt;/string&gt;
+    &lt;/property&gt;
+   &lt;/widget&gt;
+  &lt;/widget&gt;
+ &lt;/widget&gt;
+ &lt;resources/&gt;
+&lt;/ui&gt;
+</string>
+      </property>
+      <widget class="QLabel" name="lb_tehran">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>40</y>
+         <width>175</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Seven Segment</family>
+         <pointsize>28</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>0:0:0</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QWidget" name="widget_5" native="true">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>-10</y>
+         <width>491</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 85, 0);
+color: rgb(255, 255, 255);</string>
+       </property>
+       <widget class="QLabel" name="lb_tehran_8">
+        <property name="geometry">
+         <rect>
+          <x>130</x>
+          <y>-10</y>
+          <width>175</width>
+          <height>63</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Centaur</family>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Tehran</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QWidget" name="widget_6" native="true">
+        <property name="geometry">
+         <rect>
+          <x>140</x>
+          <y>80</y>
+          <width>356</width>
+          <height>85</height>
+         </rect>
+        </property>
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;ui version=&quot;4.0&quot;&gt;
+ &lt;widget name=&quot;__qt_fake_top_level&quot;&gt;
+  &lt;widget class=&quot;QWidget&quot; name=&quot;widget&quot; native=&quot;true&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;9&lt;/x&gt;
+     &lt;y&gt;192&lt;/y&gt;
+     &lt;width&gt;356&lt;/width&gt;
+     &lt;height&gt;85&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;autoFillBackground&quot;&gt;
+    &lt;bool&gt;true&lt;/bool&gt;
+   &lt;/property&gt;
+   &lt;widget class=&quot;QLabel&quot; name=&quot;lb_washington&quot;&gt;
+    &lt;property name=&quot;geometry&quot;&gt;
+     &lt;rect&gt;
+      &lt;x&gt;190&lt;/x&gt;
+      &lt;y&gt;10&lt;/y&gt;
+      &lt;width&gt;175&lt;/width&gt;
+      &lt;height&gt;62&lt;/height&gt;
+     &lt;/rect&gt;
+    &lt;/property&gt;
+    &lt;property name=&quot;font&quot;&gt;
+     &lt;font&gt;
+      &lt;family&gt;Centaur&lt;/family&gt;
+      &lt;pointsize&gt;16&lt;/pointsize&gt;
+     &lt;/font&gt;
+    &lt;/property&gt;
+    &lt;property name=&quot;text&quot;&gt;
+     &lt;string&gt;0:0:0&lt;/string&gt;
+    &lt;/property&gt;
+   &lt;/widget&gt;
+   &lt;widget class=&quot;QLabel&quot; name=&quot;lb_tehran_5&quot;&gt;
+    &lt;property name=&quot;geometry&quot;&gt;
+     &lt;rect&gt;
+      &lt;x&gt;0&lt;/x&gt;
+      &lt;y&gt;10&lt;/y&gt;
+      &lt;width&gt;175&lt;/width&gt;
+      &lt;height&gt;62&lt;/height&gt;
+     &lt;/rect&gt;
+    &lt;/property&gt;
+    &lt;property name=&quot;font&quot;&gt;
+     &lt;font&gt;
+      &lt;family&gt;Centaur&lt;/family&gt;
+      &lt;pointsize&gt;16&lt;/pointsize&gt;
+     &lt;/font&gt;
+    &lt;/property&gt;
+    &lt;property name=&quot;text&quot;&gt;
+     &lt;string&gt;Washington&lt;/string&gt;
+    &lt;/property&gt;
+   &lt;/widget&gt;
+  &lt;/widget&gt;
+ &lt;/widget&gt;
+ &lt;resources/&gt;
+&lt;/ui&gt;
+</string>
+        </property>
+        <widget class="QLabel" name="lb_tehran_9">
+         <property name="geometry">
+          <rect>
+           <x>170</x>
+           <y>10</y>
+           <width>175</width>
+           <height>63</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Centaur</family>
+           <pointsize>16</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>0:0:0</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="lb_tehran_10">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>10</y>
+           <width>175</width>
+           <height>63</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Centaur</family>
+           <pointsize>16</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Tehran</string>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="widget_2" native="true">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>241</width>
+        <height>141</height>
+       </rect>
+      </property>
+      <property name="autoFillBackground">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="widget_7" native="true">
+       <property name="geometry">
+        <rect>
+         <x>-10</x>
+         <y>0</y>
+         <width>501</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 85, 0);
+color: rgb(255, 255, 255);
+</string>
+       </property>
+       <widget class="QWidget" name="widget_8" native="true">
+        <property name="geometry">
+         <rect>
+          <x>140</x>
+          <y>80</y>
+          <width>356</width>
+          <height>85</height>
+         </rect>
+        </property>
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;ui version=&quot;4.0&quot;&gt;
+ &lt;widget name=&quot;__qt_fake_top_level&quot;&gt;
+  &lt;widget class=&quot;QWidget&quot; name=&quot;widget&quot; native=&quot;true&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;9&lt;/x&gt;
+     &lt;y&gt;192&lt;/y&gt;
+     &lt;width&gt;356&lt;/width&gt;
+     &lt;height&gt;85&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;autoFillBackground&quot;&gt;
+    &lt;bool&gt;true&lt;/bool&gt;
+   &lt;/property&gt;
+   &lt;widget class=&quot;QLabel&quot; name=&quot;lb_washington&quot;&gt;
+    &lt;property name=&quot;geometry&quot;&gt;
+     &lt;rect&gt;
+      &lt;x&gt;190&lt;/x&gt;
+      &lt;y&gt;10&lt;/y&gt;
+      &lt;width&gt;175&lt;/width&gt;
+      &lt;height&gt;62&lt;/height&gt;
+     &lt;/rect&gt;
+    &lt;/property&gt;
+    &lt;property name=&quot;font&quot;&gt;
+     &lt;font&gt;
+      &lt;family&gt;Centaur&lt;/family&gt;
+      &lt;pointsize&gt;16&lt;/pointsize&gt;
+     &lt;/font&gt;
+    &lt;/property&gt;
+    &lt;property name=&quot;text&quot;&gt;
+     &lt;string&gt;0:0:0&lt;/string&gt;
+    &lt;/property&gt;
+   &lt;/widget&gt;
+   &lt;widget class=&quot;QLabel&quot; name=&quot;lb_tehran_5&quot;&gt;
+    &lt;property name=&quot;geometry&quot;&gt;
+     &lt;rect&gt;
+      &lt;x&gt;0&lt;/x&gt;
+      &lt;y&gt;10&lt;/y&gt;
+      &lt;width&gt;175&lt;/width&gt;
+      &lt;height&gt;62&lt;/height&gt;
+     &lt;/rect&gt;
+    &lt;/property&gt;
+    &lt;property name=&quot;font&quot;&gt;
+     &lt;font&gt;
+      &lt;family&gt;Centaur&lt;/family&gt;
+      &lt;pointsize&gt;16&lt;/pointsize&gt;
+     &lt;/font&gt;
+    &lt;/property&gt;
+    &lt;property name=&quot;text&quot;&gt;
+     &lt;string&gt;Washington&lt;/string&gt;
+    &lt;/property&gt;
+   &lt;/widget&gt;
+  &lt;/widget&gt;
+ &lt;/widget&gt;
+ &lt;resources/&gt;
+&lt;/ui&gt;
+</string>
+        </property>
+        <widget class="QLabel" name="lb_tehran_12">
+         <property name="geometry">
+          <rect>
+           <x>170</x>
+           <y>10</y>
+           <width>175</width>
+           <height>63</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Centaur</family>
+           <pointsize>16</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>0:0:0</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="lb_tehran_13">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>10</y>
+           <width>175</width>
+           <height>63</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Centaur</family>
+           <pointsize>16</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Tehran</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QLabel" name="lb_tehran_3">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>-10</y>
+          <width>175</width>
+          <height>62</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Centaur</family>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Iran</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QLabel" name="tehran">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>60</y>
+         <width>175</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Seven Segment</family>
+         <pointsize>28</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>0:0:0</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="widget" native="true">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>190</y>
+        <width>261</width>
+        <height>141</height>
+       </rect>
+      </property>
+      <property name="autoFillBackground">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="widget_9" native="true">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>491</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 85, 0);
+color: rgb(255, 255, 255);</string>
+       </property>
+       <widget class="QWidget" name="widget_10" native="true">
+        <property name="geometry">
+         <rect>
+          <x>140</x>
+          <y>80</y>
+          <width>356</width>
+          <height>85</height>
+         </rect>
+        </property>
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;ui version=&quot;4.0&quot;&gt;
+ &lt;widget name=&quot;__qt_fake_top_level&quot;&gt;
+  &lt;widget class=&quot;QWidget&quot; name=&quot;widget&quot; native=&quot;true&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;9&lt;/x&gt;
+     &lt;y&gt;192&lt;/y&gt;
+     &lt;width&gt;356&lt;/width&gt;
+     &lt;height&gt;85&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;autoFillBackground&quot;&gt;
+    &lt;bool&gt;true&lt;/bool&gt;
+   &lt;/property&gt;
+   &lt;widget class=&quot;QLabel&quot; name=&quot;lb_washington&quot;&gt;
+    &lt;property name=&quot;geometry&quot;&gt;
+     &lt;rect&gt;
+      &lt;x&gt;190&lt;/x&gt;
+      &lt;y&gt;10&lt;/y&gt;
+      &lt;width&gt;175&lt;/width&gt;
+      &lt;height&gt;62&lt;/height&gt;
+     &lt;/rect&gt;
+    &lt;/property&gt;
+    &lt;property name=&quot;font&quot;&gt;
+     &lt;font&gt;
+      &lt;family&gt;Centaur&lt;/family&gt;
+      &lt;pointsize&gt;16&lt;/pointsize&gt;
+     &lt;/font&gt;
+    &lt;/property&gt;
+    &lt;property name=&quot;text&quot;&gt;
+     &lt;string&gt;0:0:0&lt;/string&gt;
+    &lt;/property&gt;
+   &lt;/widget&gt;
+   &lt;widget class=&quot;QLabel&quot; name=&quot;lb_tehran_5&quot;&gt;
+    &lt;property name=&quot;geometry&quot;&gt;
+     &lt;rect&gt;
+      &lt;x&gt;0&lt;/x&gt;
+      &lt;y&gt;10&lt;/y&gt;
+      &lt;width&gt;175&lt;/width&gt;
+      &lt;height&gt;62&lt;/height&gt;
+     &lt;/rect&gt;
+    &lt;/property&gt;
+    &lt;property name=&quot;font&quot;&gt;
+     &lt;font&gt;
+      &lt;family&gt;Centaur&lt;/family&gt;
+      &lt;pointsize&gt;16&lt;/pointsize&gt;
+     &lt;/font&gt;
+    &lt;/property&gt;
+    &lt;property name=&quot;text&quot;&gt;
+     &lt;string&gt;Washington&lt;/string&gt;
+    &lt;/property&gt;
+   &lt;/widget&gt;
+  &lt;/widget&gt;
+ &lt;/widget&gt;
+ &lt;resources/&gt;
+&lt;/ui&gt;
+</string>
+        </property>
+        <widget class="QLabel" name="lb_tehran_14">
+         <property name="geometry">
+          <rect>
+           <x>170</x>
+           <y>10</y>
+           <width>175</width>
+           <height>63</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Centaur</family>
+           <pointsize>16</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>0:0:0</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="lb_tehran_15">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>10</y>
+           <width>175</width>
+           <height>63</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Centaur</family>
+           <pointsize>16</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Tehran</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QLabel" name="lb_tehran_5">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>-10</y>
+          <width>175</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Centaur</family>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Germeny</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QLabel" name="berlin">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>50</y>
+         <width>175</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Seven Segment</family>
+         <pointsize>28</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>0:0:0</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="widget_4" native="true">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>20</y>
+        <width>271</width>
+        <height>141</height>
+       </rect>
+      </property>
+      <property name="autoFillBackground">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="widget_11" native="true">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>491</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 85, 0);
+color: rgb(255, 255, 255);</string>
+       </property>
+       <widget class="QWidget" name="widget_12" native="true">
+        <property name="geometry">
+         <rect>
+          <x>140</x>
+          <y>80</y>
+          <width>356</width>
+          <height>85</height>
+         </rect>
+        </property>
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;ui version=&quot;4.0&quot;&gt;
+ &lt;widget name=&quot;__qt_fake_top_level&quot;&gt;
+  &lt;widget class=&quot;QWidget&quot; name=&quot;widget&quot; native=&quot;true&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;9&lt;/x&gt;
+     &lt;y&gt;192&lt;/y&gt;
+     &lt;width&gt;356&lt;/width&gt;
+     &lt;height&gt;85&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;autoFillBackground&quot;&gt;
+    &lt;bool&gt;true&lt;/bool&gt;
+   &lt;/property&gt;
+   &lt;widget class=&quot;QLabel&quot; name=&quot;lb_washington&quot;&gt;
+    &lt;property name=&quot;geometry&quot;&gt;
+     &lt;rect&gt;
+      &lt;x&gt;190&lt;/x&gt;
+      &lt;y&gt;10&lt;/y&gt;
+      &lt;width&gt;175&lt;/width&gt;
+      &lt;height&gt;62&lt;/height&gt;
+     &lt;/rect&gt;
+    &lt;/property&gt;
+    &lt;property name=&quot;font&quot;&gt;
+     &lt;font&gt;
+      &lt;family&gt;Centaur&lt;/family&gt;
+      &lt;pointsize&gt;16&lt;/pointsize&gt;
+     &lt;/font&gt;
+    &lt;/property&gt;
+    &lt;property name=&quot;text&quot;&gt;
+     &lt;string&gt;0:0:0&lt;/string&gt;
+    &lt;/property&gt;
+   &lt;/widget&gt;
+   &lt;widget class=&quot;QLabel&quot; name=&quot;lb_tehran_5&quot;&gt;
+    &lt;property name=&quot;geometry&quot;&gt;
+     &lt;rect&gt;
+      &lt;x&gt;0&lt;/x&gt;
+      &lt;y&gt;10&lt;/y&gt;
+      &lt;width&gt;175&lt;/width&gt;
+      &lt;height&gt;62&lt;/height&gt;
+     &lt;/rect&gt;
+    &lt;/property&gt;
+    &lt;property name=&quot;font&quot;&gt;
+     &lt;font&gt;
+      &lt;family&gt;Centaur&lt;/family&gt;
+      &lt;pointsize&gt;16&lt;/pointsize&gt;
+     &lt;/font&gt;
+    &lt;/property&gt;
+    &lt;property name=&quot;text&quot;&gt;
+     &lt;string&gt;Washington&lt;/string&gt;
+    &lt;/property&gt;
+   &lt;/widget&gt;
+  &lt;/widget&gt;
+ &lt;/widget&gt;
+ &lt;resources/&gt;
+&lt;/ui&gt;
+</string>
+        </property>
+        <widget class="QLabel" name="lb_tehran_16">
+         <property name="geometry">
+          <rect>
+           <x>170</x>
+           <y>10</y>
+           <width>175</width>
+           <height>63</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Centaur</family>
+           <pointsize>16</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>0:0:0</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="lb_tehran_17">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>10</y>
+           <width>175</width>
+           <height>63</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Centaur</family>
+           <pointsize>16</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Tehran</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QLabel" name="lb_tehran_6">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>0</y>
+          <width>175</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Centaur</family>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>USA</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QLabel" name="washington">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>60</y>
+         <width>175</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Seven Segment</family>
+         <pointsize>28</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>0:0:0</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>Alarm</string>
+     </attribute>
+     <widget class="QTabWidget" name="tabWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>531</width>
+        <height>321</height>
+       </rect>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab_5">
+       <attribute name="title">
+        <string>Alarms</string>
+       </attribute>
+       <widget class="QWidget" name="gridLayoutWidget_2">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>0</y>
+          <width>511</width>
+          <height>261</height>
+         </rect>
+        </property>
+        <layout class="QGridLayout" name="gl_alarms"/>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_6">
+       <attribute name="title">
+        <string>Add Alarm</string>
+       </attribute>
+       <widget class="QPushButton" name="btn_addalarm">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>20</y>
+          <width>60</width>
+          <height>60</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>60</width>
+          <height>60</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>60</width>
+          <height>60</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border: 0px; border-radius: 30px; background-color: #000; color: #fff;</string>
+        </property>
+        <property name="text">
+         <string>Add</string>
+        </property>
+       </widget>
+       <widget class="QTimeEdit" name="timeEdit">
+        <property name="geometry">
+         <rect>
+          <x>290</x>
+          <y>30</y>
+          <width>221</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
+        <property name="displayFormat">
+         <string>hh:mm:ss</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_2">
+        <property name="geometry">
+         <rect>
+          <x>290</x>
+          <y>0</y>
+          <width>58</width>
+          <height>19</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Timer</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_4">
+     <attribute name="title">
+      <string>Timer</string>
+     </attribute>
+     <widget class="QWidget" name="layoutWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>0</y>
+        <width>531</width>
+        <height>181</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_14">
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="lineEdit_6">
+         <property name="minimumSize">
+          <size>
+           <width>15</width>
+           <height>70</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>15</width>
+           <height>70</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>Seven Segment</family>
+           <pointsize>40</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>:</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QLineEdit" name="tb_hour_timer_2">
+         <property name="minimumSize">
+          <size>
+           <width>70</width>
+           <height>70</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>70</width>
+           <height>70</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>Seven Segment</family>
+           <pointsize>40</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>15</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLineEdit" name="tb_minute_timer_2">
+         <property name="minimumSize">
+          <size>
+           <width>70</width>
+           <height>70</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>70</width>
+           <height>70</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>Seven Segment</family>
+           <pointsize>40</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>0</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="3">
+        <widget class="QLineEdit" name="lineEdit_7">
+         <property name="minimumSize">
+          <size>
+           <width>15</width>
+           <height>70</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>15</width>
+           <height>70</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>Seven Segment</family>
+           <pointsize>40</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>:</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="4">
+        <widget class="QLineEdit" name="tb_second_timer_2">
+         <property name="minimumSize">
+          <size>
+           <width>70</width>
+           <height>70</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>70</width>
+           <height>70</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>Seven Segment</family>
+           <pointsize>40</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>0</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QPushButton" name="btn_stop_timer">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>220</y>
+        <width>241</width>
+        <height>27</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>stop</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_start_timer">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>220</y>
+        <width>210</width>
+        <height>27</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Start</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_3">
+     <attribute name="title">
+      <string>Stop Watch</string>
+     </attribute>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>11</x>
+        <y>0</y>
+        <width>551</width>
+        <height>201</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_13">
+       <item row="1" column="1">
+        <widget class="QPushButton" name="start_sw">
+         <property name="text">
+          <string>start</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QPushButton" name="reset_sw">
+         <property name="text">
+          <string>Rest</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QPushButton" name="stop_sw">
+         <property name="text">
+          <string>stop</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLabel" name="stop_watch">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>120</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>Seven Segment</family>
+           <pointsize>55</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>0:0:0</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>549</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
