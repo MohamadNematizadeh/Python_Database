@@ -1,5 +1,5 @@
 
-# Python_dataBase![screen shot](https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Sqlite-square-icon.svg/1200px-Sqlite-square-icon.svg.pngg)
+# Python_dataBase ![screen shot](https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Sqlite-square-icon.svg/1200px-Sqlite-square-icon.svg.png)
 ## Assignment 25 
 ### **Clock App**
 ![screen shot](https://raw.githubusercontent.com/Mohammadnematizade/Python_dataBase/main/Clock%20App/img/Clock.png)
